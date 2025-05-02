@@ -1,5 +1,4 @@
 import bcryptjs from "bcryptjs";
-import { profile } from "console";
 import { errorHandler } from "../utils/error.js";
 import User from "../models/user.model.js";
 
@@ -55,6 +54,14 @@ export const deleteUser = async (req, res, next) => {
     try {
         await User.findByIdAndDelete(req.params.userId)
         res.status(200).json('User deleted successfully')
+    } catch (error) {
+        next(error)
+    }
+}
+
+export const signout = async (req, res, next) => {
+    try {
+        res.clearCookie('access_token').status(200).json('User signed out successfully')
     } catch (error) {
         next(error)
     }
