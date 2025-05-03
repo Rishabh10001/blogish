@@ -99,7 +99,7 @@ return (
                 <Dropdown.Item onClick={handleSignout}> Sign Out </Dropdown.Item>
                 </Dropdown>
             ) : (
-                <Link to='/signin'>
+                <Link to='/sign-in'>
                     <Button gradientDuoTone={'purpleToBlue'} outline>
                         Sign In
                     </Button>
