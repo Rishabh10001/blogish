@@ -4,11 +4,10 @@ import dotenv from 'dotenv';
 import userRoutes from './routes/user.route.js'
 import authRoutes from './routes/auth.route.js';
 
-dotenv.config();
+dotenv.config({ path: '.env' }); // Ensure the path is correct
+// console.log('MongoDB URI:', process.env.MONGO);
 
-mongoose.connect(
-    process.env.MONGO
-).then(
+mongoose.connect(process.env.MONGO).then(
     () => {
         console.log('Connected to MongoDB');
     }).catch((err) => {
