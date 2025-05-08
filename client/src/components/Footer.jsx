@@ -54,12 +54,12 @@ export default function FooterCom() {
                     <Footer.Title title='Legal' />
                     <Footer.LinkGroup col>
                         <Footer.Link
-                            href='#'
+                            href='/privacy'
                         >
                             Privacy
                         </Footer.Link>
                         <Footer.Link
-                            href='#'
+                            href='/terms'
                         >
                             Terms and Conditions
                         </Footer.Link>

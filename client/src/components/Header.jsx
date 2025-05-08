@@ -74,9 +74,9 @@ export default function Header() {
           <AiOutlineSearch />
         </Button>
         <div className="flex gap-2 md:order-2">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ">
             <span className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">
-              {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+              {/* {theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'} */}
             </span>
             <Button
               className="w-12 h-10 hidden sm:inline items-center gap-2"
@@ -150,7 +150,7 @@ export default function Header() {
             <Link to="/">Home</Link>
           </Navbar.Link>
           <Navbar.Link active={path === '/about'} as={'div'}>
-            <Link to="/about">About</Link>
+            <Link to="/about">About Us</Link>
           </Navbar.Link>
           <Navbar.Link active={path === '/projects'} as={'div'}>
             <Link to="/create-post">Create Post</Link>
