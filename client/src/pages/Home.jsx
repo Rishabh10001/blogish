@@ -17,14 +17,18 @@ export default function Home() {
   return (
     <div>
       <div className='flex flex-col gap-6 p-10  px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl pt-10'>Welcome to my Blog</h1>
+        <h1 className='text-3xl font-bold lg:text-6xl pt-10'>Dive in to BlogSphere!</h1>
         <p className='text-gray-500 text-xs sm:text-sm'>
-          Welcome to my blog! Here you'll find a wide range of articles,
-          tutorials, and resources designed to help you grow as a developer.
-          Whether you're interested in web development, software engineering,
-          programming languages, or best practices in the tech industry, there's
-          something here for everyone. Dive in and explore the content to expand
-          your knowledge and skills.
+        👋 Welcome People
+        You've just stepped into your personal blogging universe — powered by ideas, built by brains like yours, and fueled by the chaotic beauty of human creativity.
+
+        This isn't just a feed. It's a living, breathing scroll of stories, thoughts, rants, revelations, and hot takes from writers all around the world — and you're officially part of it.
+
+        Whether you're here to share a fresh blog, see what others are writing, or just vibe and scroll, you're exactly where you need to be
+        So grab your digital coffee, flex those reading muscles, and dive in.
+        Your next favorite blog is probably just a scroll away.
+
+        Welcome to the madness. Let's blog.
         </p>
         <Link
           to='/search'

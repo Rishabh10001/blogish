@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Alert, Button, Modal, ModalHeader, TextInput } from "flowbite-react"
 import { useEffect, useRef, useState } from "react"
 import { useSelector } from "react-redux"
@@ -187,7 +188,8 @@ export default function DashProfile() {
                     {loading ? 'Loading...' : 'Update'}
                 </Button>
                 {
-                    currentUser.isAdmin && (
+                    // currentUser.isAdmin &&
+                    (
                         <Link to={'/create-post'}>
                             <Button type="button" gradientDuoTone="purpleToPink" className="w-full">
                                 Create a post
